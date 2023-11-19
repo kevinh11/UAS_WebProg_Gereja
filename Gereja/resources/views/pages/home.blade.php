@@ -5,4 +5,3 @@
   @include('components.navbar')
   @include('components.hero')
 @endsection
-h
