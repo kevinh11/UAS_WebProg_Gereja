@@ -22,6 +22,8 @@ Route::get('/jadwal', function() {
     return view('pages.jadwal');
 });
 
+Route::get('/admin-login', [AuthController::class, 'login']);
+
 
 Route::get('/{any}', function($any){
     redirect('/');
