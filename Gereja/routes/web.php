@@ -1,6 +1,11 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
+use App\Models\User;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\EventController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -18,11 +23,15 @@ Route::get('/', function () {
     return view('pages.home');
 });
 
-Route::get('/jadwal', function() {
-    return view('pages.jadwal');
-});
+Route::get('/jadwal', [EventController::class, 'index']);
+Route::get('/admin-login', [AuthController::class, 'index']);
+Route::get('/admin-dashboard', [AdminController::class, 'index']);
 
-Route::get('/admin-login', [AuthController::class, 'login']);
+Route::get('/logout', [AuthController::class, 'logout']);
+Route::post('/login-redirect', [AuthController::class, 'login']);
+
+Route::get('events/create', [EventController::class,'display_create_view']);
+Route::post('events/create/execute', [EventController::class,'create']);
 
 
 Route::get('/{any}', function($any){
