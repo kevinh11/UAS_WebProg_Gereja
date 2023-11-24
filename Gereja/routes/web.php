@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Models\User;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\EventController;
-
+use App\Http\Controllers\ImageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,11 +31,21 @@ Route::get('/logout', [AuthController::class, 'logout']);
 Route::post('/login-redirect', [AuthController::class, 'login']);
 
 Route::get('events/create', [EventController::class,'display_create_view']);
+Route::get('events/{id}/edit', [EventController::class, 'display_edit_view']);
+Route::post('events/{id}/edit/execute', [EventController::class,'edit']);
 Route::post('events/create/execute', [EventController::class,'create']);
+Route::get('events/{id}/delete', [EventController::class,'delete']);
+
+Route::get('images/add', [ImageController::class, 'display_create_view']);
+Route::get('images/{id}/edit', [ImageController::class, 'display_edit_view']);
+Route::post('images/{id}/edit/execute', [ImageController::class,'edit']);
+Route::post('images/add/execute', [ImageController::class,'create']);
+Route::get('images/{id}/delete', [ImageController::class,'delete']);
+
 
 
 Route::get('/{any}', function($any){
-    redirect('/');
+    return view('pages.not_found');
 })->where('any', '.*');
 
 
