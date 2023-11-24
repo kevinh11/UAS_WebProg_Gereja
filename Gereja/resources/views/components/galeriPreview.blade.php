@@ -5,7 +5,7 @@
     <img src={{asset('images/altar.jpg')}}>
     <img src={{asset('images/altar.jpg')}}>
     <img src={{asset('images/altar.jpg')}}>
-    <img src={{asset('images/altar.jpg')}}
+    <img src={{asset('images/altar.jpg')}}>
 
   </div>
 

@@ -118,6 +118,10 @@ a {
   color:black;
 }
 
+.dashboard-gallery-img {
+  width: 200px;
+}
+
 table .btn-danger {
   background-color: indianred;
 }
