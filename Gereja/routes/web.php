@@ -6,6 +6,7 @@ use App\Models\User;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\ImageController;
+use App\Http\Controllers\AboutController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,6 +42,8 @@ Route::get('images/{id}/edit', [ImageController::class, 'display_edit_view']);
 Route::post('images/{id}/edit/execute', [ImageController::class,'edit']);
 Route::post('images/add/execute', [ImageController::class,'create']);
 Route::get('images/{id}/delete', [ImageController::class,'delete']);
+
+Route::get('/about', [AboutController::class, 'index']);
 
 
 

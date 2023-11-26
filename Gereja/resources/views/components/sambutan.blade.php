@@ -13,6 +13,6 @@
     </figure>
   </div>
 
-  <img src='images/anon.jpg' class='w-lg-50 sambutan-pic w-100 order-sm-1 order-sm-2'>
+  <img src='images/agusSantoso.jpg' class='w-lg-50 sambutan-pic w-100 order-sm-1 order-sm-2'>
 
 </div>
