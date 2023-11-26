@@ -10,8 +10,9 @@
      <p class='fw-bold w-sm-100 w-lg-10'>Ikuti Sosmed Kami</p>
 
     <div class="socmed-row flex d-flex flex-row align-items-center justify-content-center">
-      <img class='brand' src={{asset('images/insta.png')}}>
-      <img class='brand' src={{asset('images/facebook.png')}}>
+      <a href="https://www.instagram.com/giarajawali.jkt/" target="_blank"><img class='brand' src={{asset('images/insta.png')}}></a>
+      <a href="https://www.facebook.com/giarajawali.jkt/" target="_blank"><img class='brand' src={{asset('images/facebook.png')}}></a>
+      <a href="https://www.youtube.com/channel/UCYvHKxc8qZh60C8rdEQOjpg" target="_blank"><img class='brand' src={{asset('images/youtube.png')}}></a>
 
     </div>
   </div>
