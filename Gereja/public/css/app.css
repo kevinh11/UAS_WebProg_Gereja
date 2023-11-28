@@ -123,11 +123,23 @@ a {
 }
 
 #bible-quote {
-  background-image: url("../images/quotation-marks.jpg");
-  
+
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  min-height: 50vh;
+}
+
+#pengurus {
+  width: 500px;
+}
+
+#pengurus-gereja {
+  background-color: #5463EA;
+}
+
+#pengurus-gereja > * {
+  color: white;
 }
 
 table .btn-danger {
@@ -139,7 +151,13 @@ table .btn-danger {
   .galeri {
     grid-template-columns: 1fr;
   }
+
+  #keluarga-besar {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
+
 
 
 
