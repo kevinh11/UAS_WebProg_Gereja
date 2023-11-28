@@ -122,6 +122,14 @@ a {
   width: 200px;
 }
 
+#bible-quote {
+  background-image: url("../images/quotation-marks.jpg");
+  
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 table .btn-danger {
   background-color: indianred;
 }
