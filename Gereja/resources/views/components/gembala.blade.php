@@ -9,22 +9,22 @@
         <p class="text-break w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, impedit? Culpa eaque rem dolorum ducimus voluptatibus provident vero, voluptates facere labore! Harum fuga provident voluptatem ipsam, doloremque ullam laboriosam error nam expedita velit impedit doloribus eveniet, beatae nulla, reprehenderit praesentium. Quibusdam cumque dicta quasi voluptates laboriosam corrupti, consectetur vel ipsum?</p>
     </div>
 </div>
-<div class="flex d-flex align-items-center justify-content-around bg-primary mt-5 flex-column p-2">
+<div id='pengurus-gereja'class="flex d-flex align-items-center justify-content-around  mt-5 flex-column p-3">
     <div>
         <h3 class="fw-bold">Pengurus Gereja</h3>
     </div>
-    <div>
-        <img src="images/pengurus.jpg" class="mb-2">
+    <div class='mt-3'>
+        <img src="images/pengurus.jpg" class="img-fluid">
     </div>
-    <div class="text-center d-flex flex-column align-items-center">
-        <p class="text-break w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, impedit? Culpa eaque rem dolorum ducimus voluptatibus provident vero, voluptates facere labore! Harum fuga provident voluptatem ipsam, doloremque ullam laboriosam error nam expedita velit impedit doloribus eveniet, beatae nulla, reprehenderit praesentium. Quibusdam cumque dicta quasi voluptates laboriosam corrupti, consectetur vel ipsum?</p>
+    <div class="mt-3 text-center d-flex flex-column align-items-center">
+        <p class="mt-3 text-break w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, impedit? Culpa eaque rem dolorum ducimus voluptatibus provident vero, voluptates facere labore! Harum fuga provident voluptatem ipsam, doloremque ullam laboriosam error nam expedita velit impedit doloribus eveniet, beatae nulla, reprehenderit praesentium. Quibusdam cumque dicta quasi voluptates laboriosam corrupti, consectetur vel ipsum?</p>
     </div>
 </div>
 
-<div class="flex d-flex align-items-center justify-content-center flex-column p-2">
+<div  class="flex d-flex align-items-center justify-content-center flex-column p-2">
     <h3>Keluarga Besar Gereja Isa Almasih Rajawali</h3>
     <div class="container flex">
-        <div class="row">
+        <div id='keluarga-besar'class="row">
             <div class="col">
                 <img src="images/pwk1.jpg" class="img-fluid">
             </div>
