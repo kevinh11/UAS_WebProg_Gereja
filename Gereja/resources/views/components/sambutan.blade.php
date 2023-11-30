@@ -1,4 +1,4 @@
-<div class="container-fluid sambutan d-flex flex-column flex-lg-row p-3">
+<div class="container-fluid sambutan d-flex flex-column flex-lg-row p-5">
   <div class="salam w-lg-50 w-100 p-2 order-lg-1 order-lg-2">
     <figure>
       <h3 class='fw-bold'> SALAM SEJAHTERA, </h3>
@@ -13,6 +13,6 @@
     </figure>
   </div>
 
-  <img src='images/agusSantoso.jpg' class='w-lg-50 sambutan-pic w-100 order-sm-1 order-sm-2'>
+  <img src='images/agusSantoso.jpg' class='w-lg-50 sambutan-pic w-30 order-sm-1 order-sm-2'>
 
 </div>
