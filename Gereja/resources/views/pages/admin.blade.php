@@ -27,12 +27,12 @@
                 <td>{{$e['event_time']}}</td>
                 <td> 
                   <a href='/events/{{$e['id']}}/edit'>
-                    <button class='btn btn-primary'>Edit</button>
+                    <button class='btn btn-primary btn-sm'>Edit</button>
                   </a>
                 </td>
                 <td> 
                   <a href='/events/{{$e['id']}}/delete'>
-                    <button class='btn btn-danger'>Delete</button>
+                    <button class='btn btn-danger btn-sm'>Delete</button>
                   </a>
                 </td>
               </tr>

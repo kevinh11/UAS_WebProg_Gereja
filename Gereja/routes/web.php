@@ -7,21 +7,13 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\ImageController;
 use App\Http\Controllers\AboutController;
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
-
+use App\Http\Controllers\AyatController;
 
 Route::get('/', function () {
-    return view('pages.home');
+    $ayat = new AyatController();
+    $ayat->set_daily_verse();
+
+    return view('pages.home', ['ayat'=> $ayat->get_verse()]);
 });
 
 Route::get('/jadwal', [EventController::class, 'index']);
