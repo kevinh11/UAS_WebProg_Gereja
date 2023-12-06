@@ -8,6 +8,7 @@ use App\Http\Controllers\EventController;
 use App\Http\Controllers\ImageController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AyatController;
+use App\Http\Controllers\AnnouncementController;
 
 Route::get('/', function () {
     $ayat = new AyatController();
@@ -35,9 +36,14 @@ Route::post('images/{id}/edit/execute', [ImageController::class,'edit']);
 Route::post('images/add/execute', [ImageController::class,'create']);
 Route::get('images/{id}/delete', [ImageController::class,'delete']);
 
+Route::get('announcements/create', [AnnouncementController::class, 'display_create_view']);
+Route::get('announcements/{id}/edit', [AnnouncementController::class, 'display_edit_view']);
+Route::post('announcements/{id}/edit/execute', [AnnouncementController::class, 'edit']);
+Route::post('announcements/create/execute', [AnnouncementController::class, 'create']);
+Route::get('announcements/{id}/delete', [AnnouncementController::class, 'delete']);
+
+
 Route::get('/about', [AboutController::class, 'index']);
-
-
 
 Route::get('/{any}', function($any){
     return view('pages.not_found');
