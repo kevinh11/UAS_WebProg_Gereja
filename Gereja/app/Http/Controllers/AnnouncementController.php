@@ -11,7 +11,11 @@ class AnnouncementController extends Controller
 
     public function read()
     {
-        $this->announcements = Announcement::all();
+        $this->announcements = Announcement::all()->toArray();
+        // dd($this->announcements);
+
+
+        return response()->json(['announcement'=>$this->announcements]);
     }
 
     public function edit($id, Request $req)
@@ -60,7 +64,6 @@ class AnnouncementController extends Controller
 
     public function index()
     {
-        $this->read();
-        return view('components.pengumuman', ['ann' => $this->announcements]);
+
     }
 }

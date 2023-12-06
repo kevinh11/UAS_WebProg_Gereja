@@ -9,12 +9,17 @@ use App\Http\Controllers\ImageController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AyatController;
 use App\Http\Controllers\AnnouncementController;
+use App\Models\Announcement;
 
 Route::get('/', function () {
     $ayat = new AyatController();
+
+    $annCtr = new AnnouncementController();
+    $annCtr->read();
+
     $ayat->set_daily_verse();
 
-    return view('pages.home', ['ayat'=> $ayat->get_verse()]);
+    return view('pages.home', ['ayat'=> $ayat->get_verse(), 'announcements'=> $annCtr->announcements]);
 });
 
 Route::get('/jadwal', [EventController::class, 'index']);
@@ -41,6 +46,7 @@ Route::get('announcements/{id}/edit', [AnnouncementController::class, 'display_e
 Route::post('announcements/{id}/edit/execute', [AnnouncementController::class, 'edit']);
 Route::post('announcements/create/execute', [AnnouncementController::class, 'create']);
 Route::get('announcements/{id}/delete', [AnnouncementController::class, 'delete']);
+Route::get('announcements/all', [AnnouncementController::class, 'read']);
 
 
 Route::get('/about', [AboutController::class, 'index']);
