@@ -3,20 +3,12 @@
         <figure>
             <h3 class='fw-bold'> SALAM SEJAHTERA, </h3>
             <blockquote class="blockquote">
-                <p class='text-break'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto perferendis
-                    voluptatibus nam assumenda veniam ipsa iure recusandae ab accusamus similique, iste maiores vel
-                    velit ratione sapiente, sint magni quia dolorum quam minima illum molestiae. Esse quod labore
-                    similique hic omnis corrupti veniam voluptas.</p>
-                <p class="text-break">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quia et quo ipsum
-                    molestias ad numquam eaque iure voluptatibus reprehenderit suscipit, facilis nam!</p>
-                <p class="text-break">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ullam dolorem
-                    minus soluta accusamus ipsum asperiores delectus, maiores non illo consectetur quae neque explicabo
-                    deleniti, hic id error exercitationem eos odit consequuntur. Consequatur nisi cum eos fugiat
-                    distinctio quibusdam ab labore cupiditate, ullam aliquam quo, praesentium velit libero iste suscipit
-                    veniam sint modi temporibus hic perspiciatis at atque accusamus eum. In quia debitis nam architecto
-                    dignissimos esse corporis eius corrupti enim officia veniam consequuntur sint iusto rerum doloribus
-                    vero eaque deserunt error magnam veritatis sequi mollitia, porro similique. Natus minus vel rerum
-                    iste molestias assumenda temporibus tenetur cupiditate.</p>
+                <p class='text-break'>Selamat datang di halaman online website Gereja Isa Almasih jemaat Rajawali!</p>
+                <p class="text-break">Kami dengan sukacita menyambut Anda dalam kebersamaan iman dan kasih Kristus. Melalui platform ini, 
+                    kami berbagi Firman Tuhan, renungan, dan informasi seputar kegiatan jemaat. Mari bersama-sama memperkuat iman, membangun komunitas, 
+                    dan menyebarluaskan kasih Kristus kepada dunia. Terima kasih atas kunjungan Anda, dan biarlah melalui website ini, kita dapat tumbuh bersama dalam 
+                    pengenalan akan kasih dan kebenaran Tuhan. </p>
+                <p class="text-break">Tuhan Yesus memberkati!</p>
             </blockquote>
             <figcaption class="blockquote-footer">
                 Agus Santoso, <cite title="Source Title"> Kepala Isa Almasih Rajawali</cite>
