@@ -7,6 +7,8 @@
     @include('components.ayat')
     @include('components.galeriPreview')
     @include('components.footer')
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <script src='js/announcement.js'></script>
     <script src='/js/ayat.js'></script>
     <script>
