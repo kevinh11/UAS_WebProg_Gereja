@@ -44,20 +44,21 @@ Array.from(carets).forEach((c)=> {
     swipe(1)
   }
 
-
   setAnnouncementMsg()
  });
  
 
 })
+
+
 function setAnnouncementMsg() {
-  // Check if announcements array is not empty
   if (announcements.length > 0) {
     announcement.textContent = announcements[currIdx].announcement;
     counter.textContent = `${currIdx + 1}/${announcements.length}`;
-  } else {
-    // Handle the case when the announcements array is empty
-    announcement.textContent = "No announcements available";
+  } 
+  
+  else {
+    announcement.textContent = "Tidak ada pengunguman saat ini";
     counter.textContent = "0/0";
   }
 

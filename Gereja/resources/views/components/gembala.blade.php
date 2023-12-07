@@ -24,8 +24,8 @@
 </div>
 
 <div class="flex d-flex align-items-center justify-content-center flex-column p-2">
-    <h3>Keluarga Besar Gereja Isa Almasih Rajawali</h3>
-    <div class="container flex">
+    <h3 class='mt-3'>Keluarga Besar Gereja Isa Almasih Rajawali</h3>
+    <div class="mt-5 container flex">
         <div id='keluarga-besar'class="row">
             <div class="col">
                 <img data-aos="fade-right" src="images/pwk1.jpg" class="img-fluid">
@@ -38,7 +38,7 @@
             </div>
         </div>
     </div>
-    <div class="text-center d-flex flex-column align-items-center mt-2">
+    <div class=" mt-2 text-center d-flex flex-column align-items-center mt-2">
         <p data-aos="zoom-out" class="text-break w-50">Keluarga Besar Gereja Isa Almasih Rajawali terdiri dari berbagai macam kesatuan seperti PWK, PBK, PPK, KAA, TRBK, dan PRBK</p>
     </div>
 </div>

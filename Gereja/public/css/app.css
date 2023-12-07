@@ -157,10 +157,7 @@ table .btn-danger {
     grid-template-columns: 1fr;
   }
 }
-
-
-
-
-
-
-
+tr td {
+  max-width: 500px;
+  word-wrap: break-word;
+}
