@@ -1,9 +1,9 @@
 <div class='announcement hero flex d-flex flex-column justify-content-center align-items-center'>
     <img class='section-bg' src={{ asset('images/altar.jpg') }} alt="foto pengunguman">
+    <i class='fa mx-5 caret left fa-caret-left'></i>
 
     <div data-aos="zoom-in"class='flex d-flex flex-column justify-content-center align-items-center '>
 
-        <i class='fa mx-5 caret left fa-caret-left'></i>
         <div class=" flex d-flex flex-column">
             <h1>PENGUMUMAN</h1>
             <hr>
@@ -14,7 +14,8 @@
             perferendis alias laboriosam quisquam. Libero eum at quae maxime. Excepturi, aliquid neque.</p>
 
         <p class='fw-bold' id='pengumumanCounter'>0</p>
-        <i class='fa mx-5 caret right fa-caret-right'></i>
 
     </div>
+    <i class='fa mx-5 caret right fa-caret-right'></i>
+
 </div>
