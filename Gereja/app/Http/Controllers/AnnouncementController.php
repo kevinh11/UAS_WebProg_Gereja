@@ -38,14 +38,14 @@ class AnnouncementController extends Controller
 
     public function create(Request $req)
     {
-    $this->validate($req, [
-        'announcement' => 'required|string', 
-    ]);
+        $this->validate($req, [
+            'announcement' => 'required|string', 
+        ]);
 
-    $announcementText = $req->input('announcement');
+        $announcementText = $req->input('announcement');
 
-    Announcement::create([
-        'announcement' => $announcementText,
+        Announcement::create([
+            'announcement' => $announcementText,
     ]);
 
     return redirect('/admin-dashboard');
