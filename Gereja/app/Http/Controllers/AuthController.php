@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
 
@@ -27,11 +28,10 @@ class AuthController extends Controller
     }
  
     function login(Request $request) {
-        $this->req = $request->all();
-        $user = DB::table('admins')->where('username', $this->req['username'])->first();
-    
-        if ($user && $this->req['password'] === $user->password) {
+        $credentials = $request->only('username', 'password');
+        if (Auth::attempt($credentials)) {
             setcookie('loggedIn', true, time() + (86400*21));
+            $request->session()->regenerate();
             $this->send_response(true);
             return redirect('/');
         }
@@ -43,6 +43,7 @@ class AuthController extends Controller
     }
 
     function logout() {
+        Auth::logout();
         setcookie('loggedIn', false, time() - 86400);
         return redirect('/');
     }
