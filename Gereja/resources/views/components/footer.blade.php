@@ -9,21 +9,6 @@
         @else
         <a href='/logout' class='admin-link'> Logout </a>
         @endif
-        <style>
-            .admin-link {
-                border: 1px solid black;
-                padding: 5px 10px;
-                display: inline-block;
-                color: red;
-                border-radius: 5px;
-                transition: background-color 0.3s;
-            }
-            .admin-link:hover {
-                background-color: white;
-                color: blue;
-            }
-        </style>
-
     </div>
 
     <div class='w-50 socmed d-flex flex-column align-items-end px-5'>

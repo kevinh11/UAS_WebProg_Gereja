@@ -161,3 +161,16 @@ tr td {
   max-width: 500px;
   word-wrap: break-word;
 }
+
+.admin-link {
+  border: 1px solid black;
+  padding: 5px 10px;
+  display: inline-block;
+  color: red;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.admin-link:hover {
+  background-color: white;
+  color: blue;
+}
