@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Image;
+use Intervention\Image\ImageManager;
+use Intervention\Image\Drivers\Imagick\Driver;
 
 class ImageController extends Controller
 {
@@ -23,7 +25,7 @@ class ImageController extends Controller
         $desc = $req->input('desc');
 
         if ($this->verify_ext($img_name) && $img->isValid()) {
-            $manager = new();
+            $manager = new ImageManager(new Driver());
 
         
 
