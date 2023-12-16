@@ -1,0 +1,8 @@
+.admin-link {
+    border: 1px solid black; 
+    padding: 5px 10px; 
+    display: inline-block; 
+    text-decoration: none; 
+    color: red; 
+    border-radius: 5px; 
+}

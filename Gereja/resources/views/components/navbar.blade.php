@@ -23,11 +23,7 @@
     @endif
     <div class="navbar-text fw-bold px-3"> <a href='about'>Tentang Kami </a></div>
    
-    @if(!isset($_COOKIE['loggedIn']))
-      <a href='/admin-login'><img id='auth' src={{asset('images/login.png')}}></a>
-      @else
-      <a href='/logout'><img id='auth' src={{asset('images/logout.png')}}></a>
-    @endif
+    
   
   </div>
 
