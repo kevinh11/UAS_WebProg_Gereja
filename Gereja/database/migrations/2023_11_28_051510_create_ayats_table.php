@@ -17,6 +17,9 @@ return new class extends Migration
             $table->string('kitab');
             $table->timestamps();
         });
+
+
+    
     }
 
     /**
