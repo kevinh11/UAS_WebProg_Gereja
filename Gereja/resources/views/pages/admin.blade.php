@@ -19,6 +19,11 @@
                     </thead>
 
                     <tbody>
+                        @if (count($events) == 0) 
+                            <tr>
+                                Tidak ada Acara untuk ditampilkan.
+                            </tr>
+                        @endif
                         @foreach ($events as $e)
                             <tr>
                                 <td>{{ $e['id'] }}</td>
@@ -57,6 +62,13 @@
                     </thead>
 
                     <tbody>
+
+                        @if (count($images) == 0) 
+                            <tr>
+                                Tidak ada Gambar untuk ditampilkan.
+                            </tr>
+                        @endif
+                       
                         @foreach ($images as $i)
                             <tr>
                                 <td>{{ $i['id'] }}</td>
@@ -95,6 +107,11 @@
                     </thead>
 
                     <tbody>
+                        @if (count($announcements) == 0) 
+                            <tr>
+                                Tidak ada Pengunguman untuk ditampilkan.
+                            </tr>
+                         @endif
                         @foreach ($announcements as $announcement)
                             <tr>
                                 <td>{{ $announcement['id'] }}</td>

@@ -13,8 +13,6 @@ class AnnouncementController extends Controller
     {
         $this->announcements = Announcement::all()->toArray();
         // dd($this->announcements);
-
-
         return response()->json(['announcement'=>$this->announcements]);
     }
 

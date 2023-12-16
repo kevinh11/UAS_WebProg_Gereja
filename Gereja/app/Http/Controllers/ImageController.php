@@ -23,10 +23,13 @@ class ImageController extends Controller
         $desc = $req->input('desc');
 
         if ($this->verify_ext($img_name) && $img->isValid()) {
+            $manager = new();
+
+        
+
             $image->img = $img;
             $image->path = $path;
             $image->desc = $desc;
-    
             $image->save();
             return redirect('/admin-dashboard');
         }
@@ -60,13 +63,18 @@ class ImageController extends Controller
 
     function create(Request $req) {
 
-        $img = $req->file('gambar');
+        $img = Image::make($req->file('gambar'));
         $desc = $req->input('desc');
         $img_name = $img->getClientOriginalName();
 
+        $compressedImageData = $this->compressImage($img);
+
         if ($this->verify_ext($img_name) && $img->isValid()) {
+
+            $manager = new ImageManager(new Driver());
+
             Image::create([
-                'img'=>file_get_contents($req->file('gambar')->getRealPath()),
+                'img'=>file_get_contents($compressedImageData->getRealPath()),
                 'desc'=>$desc
             ]);
             return redirect('/admin-dashboard');
@@ -88,7 +96,6 @@ class ImageController extends Controller
     }
     function index() {
         $this->read();
-
         return view('pages.galeri', ['images'=>$this->images]);
 
     }
