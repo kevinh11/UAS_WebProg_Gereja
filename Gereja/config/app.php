@@ -169,7 +169,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        Intervention\Image\ImageManager::class,
+        //Intervention\Image\ImageManager::class,
         
     ])->toArray(),
 
