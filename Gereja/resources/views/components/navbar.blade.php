@@ -1,6 +1,6 @@
 <nav class='navbar navbar-light navbar-expand-lg p-3 flex-row justify-content-between'>
   <div class='nav-logo flex d-flex'>
-    <img src={{asset('images/logo.png')}}>
+    <a href='/'><img src={{asset('images/logo.png')}}></a>
     <h5 class='fw-bold'> Isa Almasih <br> Jemaat <br>Rajawali</h5>
   </div>
   <button class='navbar-toggler collapsed' data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"'>
