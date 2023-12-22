@@ -1,2 +1,8 @@
-composer require laravel/ui
-composer require intervention/image
+Clarence Andrew 			(00000068695)
+Darry Clay Laya 			(00000068429)
+Farel Arden Jani 			(00000075163)
+Friedrich Litani Santoso	 	(00000068855)
+Javier Raell Rimba 			(00000067721)
+Kevin Wijaya Hadinata 		(00000068544)
+Samuel Maximus Lamere	 	(00000068572)
+Tristan Liandra Amatya 		(00000089615)
