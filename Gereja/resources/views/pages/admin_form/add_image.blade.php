@@ -7,8 +7,8 @@
     session_start();
   
   ?>
-  <h1 class='fw-bold'>Tambah Gambar ke Galeri</h1>
-
+  <h1 class='fw-bold'>Tambah Gambar ke Galeri </h1>
+    <h4>Max 10 mb</h4>
   <form id='upload-gambar-form' method='post' enctype="multipart/form-data" action='add/execute' class='login-form'>
     @csrf
     <div class="w-100 form-group mt-4">

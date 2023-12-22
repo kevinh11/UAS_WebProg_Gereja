@@ -13,9 +13,27 @@ class GaleriController extends Controller
     }
 
     public $galeri = [];
+    public $preview = [];
 
     function read(){
-        $this->galeri = Image::all();
+        $this->galeri = Image::all()->toArray();
+    
+    }
+    
+    
+    function preview() {
+        $this->read();
+        
+        if (count($this->galeri) > 6) {
+            $this->preview = array_splice($this->galeri, -1,6);
+        }
+        
+        else {
+            $this->preview = $this->galeri;
+        }
+        
+        
+        
     }
 
 }

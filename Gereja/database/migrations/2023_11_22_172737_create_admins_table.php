@@ -24,8 +24,8 @@ return new class extends Migration
 
        
         DB::table('admins')->insert([
-            'username' => 'admin',
-            'password' => bcrypt('123'),
+            'username' => 'giarajawaliadmin',
+            'password' => bcrypt('GIArajawali123'),
             'is_admin' => true,
             'created_at' => now(),
             'updated_at' => now(),

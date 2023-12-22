@@ -45,7 +45,7 @@ body {
   text-transform: uppercase;
   text-wrap: wrap;
   font-weight: bold;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 #hero-text {
@@ -149,11 +149,32 @@ a {
   color: white;
 }
 
+.galeri-img {
+    width:250px;
+}
+
+.preview-img {
+    height:50px;
+}
+
 table .btn-danger {
   background-color: indianred;
 }
 
+@media screen and (max-width:1250px) {
+    .galeri {
+    grid-template-columns: 1fr 1fr;
+  } 
+}
+@media screen and (max-width:1000px) {
+   .galeri {
+        grid-template-columns: 1fr;
+    } 
 
+    .hero h1 {
+      font-size:3rem;
+    }
+}
 @media screen and (max-width:600px) {
   .galeri {
     grid-template-columns: 1fr;
@@ -163,6 +184,8 @@ table .btn-danger {
     display: grid;
     grid-template-columns: 1fr;
   }
+
+ 
 }
 tr td {
   max-width: 500px;

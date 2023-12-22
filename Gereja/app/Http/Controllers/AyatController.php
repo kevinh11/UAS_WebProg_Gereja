@@ -30,7 +30,6 @@ class AyatController extends Controller
 
         if (!isset($_COOKIE['ayat'])) {
             $randomVerse = $this->get_random();
-
             $this->set_verse_cookie($randomVerse);
             $this->curr_verse = $randomVerse; 
         }
@@ -60,6 +59,8 @@ class AyatController extends Controller
 
     
     }
+
+
 
 
 

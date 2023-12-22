@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('content')
     @include('components.navbar')
-    <div class='page flex d-flex flex-column justify-content-lg-start justify-content-center align-items-center'>
+    <div class='page flex d-flex flex-column justify-content-lg-start justify-content-center align-items-center mt-5'>
         <h1>Admin Login</h1>
         <form method='post' action='login-redirect' class='login-form'>
             @csrf

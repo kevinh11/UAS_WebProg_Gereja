@@ -5,7 +5,7 @@
     <div data-aos="zoom-in"class='flex d-flex flex-column justify-content-center align-items-center '>
 
         <div class=" flex d-flex flex-column">
-            <h1>PENGUMUMAN</h1>
+            <h1 class='announcement-text'>PENGUMUMAN</h1>
             <hr>
         </div>
         <p id='pengumuman' class='text-break w-50 '>Lorem ipsum dolor sit amet consectetur adipisicing elit.

@@ -14,13 +14,14 @@ use App\Models\Announcement;
 
 Route::get('/', function () {
     $ayat = new AyatController();
-
     $annCtr = new AnnouncementController();
+    $galeriCtr = new GaleriController();
+
     $annCtr->read();
-
     $ayat->set_daily_verse();
+    $galeriCtr->preview();
 
-    return view('pages.home', ['ayat'=> $ayat->get_verse(), 'announcements'=> $annCtr->announcements]);
+    return view('pages.home', ['ayat'=> $ayat->get_verse(), 'announcements'=> $annCtr->announcements, 'preview'=> $galeriCtr->preview]);
 });
 
 Route::get('/jadwal', [EventController::class, 'index']);
@@ -47,10 +48,11 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('announcements/{id}/edit/execute', [AnnouncementController::class, 'edit']);
     Route::post('announcements/create/execute', [AnnouncementController::class, 'create']);
     Route::get('announcements/{id}/delete', [AnnouncementController::class, 'delete']);
-    Route::get('announcements/all', [AnnouncementController::class, 'read']);
 
     Route::get('/logout', [AuthController::class, 'logout']);
 });
+
+Route::get('announcements/all', [AnnouncementController::class, 'read']);
 
 
 Route::get('/galeri', [GaleriController::class, 'index']);
