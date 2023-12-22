@@ -7,7 +7,7 @@ let currIdx = 0;
 
 
 function makeRequest() {
-    const url = 'https://giarajawali.net/public/announcements/all'
+    const url = 'http://127.0.0.1:8000/announcements/all'
     console.log(url)
   axios.get(url)
   
