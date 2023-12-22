@@ -3,7 +3,7 @@
 
 @section('content')
   <h1 class='fw-bold'>Edit Acara</h1>
-  <form method='post' action='/events/{{$event["id"]}}/edit/execute' class='login-form'>
+  <form method='post' action='edit/execute' class='login-form'>
     @csrf
     <div class="w-100 form-group mt-4">
       <label for="username">ID Acara</label>

@@ -38,7 +38,7 @@ class AuthController extends Controller
         
         else {
             $this->send_response(false);
-            return redirect('/admin-login');
+            return redirect('admin-login');
         }
     }
 

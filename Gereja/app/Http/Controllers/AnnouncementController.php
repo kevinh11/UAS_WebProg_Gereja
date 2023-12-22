@@ -25,13 +25,13 @@ class AnnouncementController extends Controller
             'announcement' => $announcementText,
         ]);
 
-        return redirect('/admin-dashboard');
+        return redirect('admin-dashboard');
     }
 
     public function delete($id)
     {
         Announcement::find($id)->delete();
-        return redirect('/admin-dashboard');
+        return redirect('admin-dashboard');
     }
 
     public function create(Request $req)
@@ -46,7 +46,7 @@ class AnnouncementController extends Controller
             'announcement' => $announcementText,
     ]);
 
-    return redirect('/admin-dashboard');
+    return redirect('admin-dashboard');
     }
 
     public function display_edit_view($id)

@@ -3,7 +3,7 @@
     @include('components.navbar')
     <div class='page flex d-flex flex-column justify-content-lg-start justify-content-center align-items-center'>
         <h1>Admin Login</h1>
-        <form method='post' action='/login-redirect' class='login-form'>
+        <form method='post' action='login-redirect' class='login-form'>
             @csrf
             <div class="w-100 form-group mt-4">
                 <label for="username">Username</label>

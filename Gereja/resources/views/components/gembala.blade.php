@@ -6,7 +6,7 @@
         <img src="images/agusSantoso.jpg" class="mb-3">
     </div>
     <div class="text-center d-flex flex-column align-items-center">
-        <p class="text-break w-50">Bapak Dr. Agus Santoso adalah Gembala Sidang Gereja Isa Almasih Rajawali. Beliau merupakan lulusan Fakultas Teolog Universitas Heidelberg,
+        <p class="text-break w-50">Bapak Dr. Agus Santoso adalah Gembala Sidang Gereja Isa Almasih Rajawali. Beliau merupakan lulusan Fakultas Teologi Universitas Heidelberg,
             dan telah menjabat sebagai Pendeta Gereja Isa Almasih sejak tahun 2000.
         </p>
     </div>

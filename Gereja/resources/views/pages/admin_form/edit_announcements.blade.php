@@ -2,7 +2,7 @@
 
 @section('content')
     <h1 class='fw-bold'>Edit Announcement</h1>
-    <form method='post' action='/announcements/{{ $announcement['id'] }}/edit/execute' class='login-form'>
+    <form method='post' action='edit/execute' class='login-form'>
         @csrf
         <div class="w-100 form-group mt-4">
             <label for="announcement_id">Announcement ID</label>

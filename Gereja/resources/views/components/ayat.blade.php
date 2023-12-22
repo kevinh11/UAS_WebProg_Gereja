@@ -5,11 +5,11 @@
     <figure class='flex d-flex flex-column align-items-center justify-content-center mt-3'>
         <blockquote class="blockquote text-center">
             <p id='ayat' class='text-break w-70'>
-                {{ $_COOKIE['ayat'] }}
+             {{ $ayat['ayat'] }}
             </p>
         </blockquote>
         <figcaption class="blockquote-footer">
-            <cite title="Source Title"> {{ $_COOKIE['kitab'] }}</cite>
+            <cite title="Source Title"> {{ $ayat['kitab'] }} </cite>
         </figcaption>
     </figure>
 </div>

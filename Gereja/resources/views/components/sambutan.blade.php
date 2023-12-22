@@ -11,7 +11,7 @@
                 <p class="text-break">Tuhan Yesus memberkati!</p>
             </blockquote>
             <figcaption class="blockquote-footer">
-                Agus Santoso, <cite title="Source Title"> Kepala Isa Almasih Rajawali</cite>
+                Agus Santoso, <cite title="Source Title"> Gembala Gereja Isa Almasih Jemaat Rajawali</cite>
             </figcaption>
         </figure>
     </div>

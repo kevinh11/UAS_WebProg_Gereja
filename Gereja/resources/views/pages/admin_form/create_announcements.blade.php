@@ -3,7 +3,7 @@
 @section('content')
     <h1 class='fw-bold'>Create Announcement</h1>
 
-    <form id='create-announcement-form' method='post' action='/announcements/create/execute' class='login-form'>
+    <form id='create-announcement-form' method='post' action='create/execute' class='login-form'>
         @csrf
 
         <div class="form-group mt-4 flex d-flex flex-column">

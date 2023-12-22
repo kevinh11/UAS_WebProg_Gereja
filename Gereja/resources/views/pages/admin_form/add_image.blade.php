@@ -9,7 +9,7 @@
   ?>
   <h1 class='fw-bold'>Tambah Gambar ke Galeri</h1>
 
-  <form id='upload-gambar-form' method='post' enctype="multipart/form-data" action='/images/add/execute' class='login-form'>
+  <form id='upload-gambar-form' method='post' enctype="multipart/form-data" action='add/execute' class='login-form'>
     @csrf
     <div class="w-100 form-group mt-4">
       <label for="Upload gambar"></label>

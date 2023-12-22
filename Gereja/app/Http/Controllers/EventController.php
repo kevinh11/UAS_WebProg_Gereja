@@ -26,12 +26,12 @@ class EventController extends Controller
         $event->event_title = $judul;
 
         $event->save();
-        return redirect('/admin-dashboard');
+        return redirect('admin-dashboard');
     }
 
     function delete($id) {
         Event::find($id)->delete();
-        return redirect('/admin-dashboard');
+        return redirect('admin-dashboard');
     }
 
     function create(Request $req) {
@@ -48,7 +48,7 @@ class EventController extends Controller
             'event_time'=> $waktu
         ]);
         
-        return redirect('/admin-dashboard');
+        return redirect('admin-dashboard');
 
     }
 
@@ -62,6 +62,7 @@ class EventController extends Controller
         return view('pages.admin_form.create_event');
     }
     function index() {
+        //dd('Reached here!');
         $this->read();
         return view('pages.jadwal', ['events'=>$this->events]);
 

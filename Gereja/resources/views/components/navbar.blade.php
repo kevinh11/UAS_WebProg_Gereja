@@ -10,14 +10,14 @@
     <div class="navbar-text fw-bold px-3"> 
       <a href='/'> Home </a>
     </div>
-    <div class="navbar-text fw-bold px-3"><a href='/jadwal'>Acara</a></div>
+    <div class="navbar-text fw-bold px-3"><a href='jadwal'>Acara</a></div>
     @if(isset($_COOKIE['loggedIn'])) 
       <div class="nav-item dropdown">
         <a class="fw-bold nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Admin
         </a>
         <div class="dropdown-menu">
-          <a class='text-dark p-2'href='/admin-dashboard'>Admin Dashboard</a>
+          <a class='text-dark p-2'href='admin-dashboard'>Admin Dashboard</a>
         </div>
       </div>
     @endif

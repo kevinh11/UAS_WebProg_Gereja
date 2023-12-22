@@ -8,6 +8,7 @@ use App\Http\Controllers\EventController;
 use App\Http\Controllers\ImageController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AyatController;
+use App\Http\Controllers\GaleriController;
 use App\Http\Controllers\AnnouncementController;
 use App\Models\Announcement;
 
@@ -52,7 +53,7 @@ Route::group(['middleware' => 'auth'], function () {
 });
 
 
-
+Route::get('/galeri', [GaleriController::class, 'index']);
 Route::get('/about', [AboutController::class, 'index']);
 
 Route::get('/{any}', function($any){

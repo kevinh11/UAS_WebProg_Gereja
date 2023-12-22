@@ -31,12 +31,12 @@
                                 <td>{{ $e['event_date'] }}</td>
                                 <td>{{ $e['event_time'] }}</td>
                                 <td>
-                                    <a href='/events/{{ $e['id'] }}/edit'>
+                                    <a href='events/{{ $e['id'] }}/edit'>
                                         <button class='btn btn-primary btn-sm'>Edit</button>
                                     </a>
                                 </td>
                                 <td>
-                                    <a href='/events/{{ $e['id'] }}/delete'>
+                                    <a href='events/{{ $e['id'] }}/delete'>
                                         <button class='btn btn-danger btn-sm'>Delete</button>
                                     </a>
                                 </td>
@@ -78,12 +78,12 @@
                                 </td>
                                 <td>{{ $i['desc'] }}</td>
                                 <td>
-                                    <a href='/images/{{ $i['id'] }}/edit'>
+                                    <a href='images/{{ $i['id'] }}/edit'>
                                         <button class='btn my-auto btn-primary'>Edit</button>
                                     </a>
                                 </td>
                                 <td>
-                                    <a href='/images/{{ $i['id'] }}/delete'>
+                                    <a href='images/{{ $i['id'] }}/delete'>
                                         <button class='btn btn-danger'>Delete</button>
                                     </a>
                                 </td>
@@ -117,12 +117,12 @@
                                 <td>{{ $announcement['id'] }}</td>
                                 <td>{{ $announcement['announcement'] }}</td>
                                 <td>
-                                    <a href='/announcements/{{ $announcement['id'] }}/edit'>
+                                    <a href='announcements/{{ $announcement['id'] }}/edit'>
                                         <button class='btn btn-primary'>Edit</button>
                                     </a>
                                 </td>
                                 <td>
-                                    <a href='/announcements/{{ $announcement['id'] }}/delete'>
+                                    <a href='announcements/{{ $announcement['id'] }}/delete'>
                                         <button class='btn btn-danger'>Delete</button>
                                     </a>
                                 </td>

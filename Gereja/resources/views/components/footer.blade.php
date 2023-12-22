@@ -5,9 +5,9 @@
             (021) 64713664 <br>
             giarajawali35@gmail.com</p>
         @if(!isset($_COOKIE['loggedIn']))
-        <a href='/admin-login' class='admin-link'> Admin </a>
+        <a href='admin-login' class='admin-link'> Admin </a>
         @else
-        <a href='/logout' class='admin-link'> Logout </a>
+        <a href='logout' class='admin-link'> Logout </a>
         @endif
     </div>
 

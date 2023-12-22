@@ -45,7 +45,14 @@ body {
   text-transform: uppercase;
   text-wrap: wrap;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 5rem;
+}
+
+#hero-text {
+  text-transform: uppercase;
+  text-wrap: wrap;
+  font-weight: bold;
+  font-size: 8rem;
 }
 
 .btn {

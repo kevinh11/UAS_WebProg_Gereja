@@ -33,7 +33,7 @@ class ImageController extends Controller
             $image->path = $path;
             $image->desc = $desc;
             $image->save();
-            return redirect('/admin-dashboard');
+            return redirect('admin-dashboard');
         }
 
         else {
@@ -44,7 +44,7 @@ class ImageController extends Controller
 
     function delete($id) {
         Image::find($id)->delete();
-        return redirect('/admin-dashboard');
+        return redirect('admin-dashboard');
     }
 
 
@@ -79,7 +79,7 @@ class ImageController extends Controller
                 'img'=>file_get_contents($compressedImageData->getRealPath()),
                 'desc'=>$desc
             ]);
-            return redirect('/admin-dashboard');
+            return redirect('admin-dashboard');
         }
         else {
             return redirect()->back()->with('success', 'Gambar tidak bisa di save. Pastikan file berupa gambar');

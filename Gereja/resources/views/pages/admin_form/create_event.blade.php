@@ -3,7 +3,7 @@
 @section('content')
   <h1 class='fw-bold'>Acara Baru</h1>
 
-  <form method='post' action='/events/create/execute' class='login-form'>
+  <form method='post' action='create/execute' class='login-form'>
     @csrf
     <div class="w-100 form-group mt-4">
       <label for="username">Judul Acara</label>

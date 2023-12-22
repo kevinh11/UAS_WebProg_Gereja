@@ -10,6 +10,6 @@
         <img data-aos="fade-left" src={{ asset('images/altar.jpg') }}>
     </div>
 
-    <button class='mt-2 p-3 btn fw-bold'><a href='/galeri'>FOTO LAIN</a></button>
+    <button class='mt-2 p-3 btn fw-bold'><a href='galeri'>FOTO LAIN</a></button>
 
 </div>

@@ -3,7 +3,7 @@
 @section('content')
   <h1 class='fw-bold'>Tambah Gambar ke Galeri</h1>
 
-  <form id='upload-gambar-form' method='post' enctype="multipart/form-data" action='/images/{{$image["id"]}}/edit/execute' class='login-form'>
+  <form id='upload-gambar-form' method='post' enctype="multipart/form-data" action='edit/execute' class='login-form'>
     @csrf
     <div class="w-100 form-group mt-4">
       <label for="Upload gambar">ID gambar</label>
