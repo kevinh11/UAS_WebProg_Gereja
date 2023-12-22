@@ -13,6 +13,6 @@
         
     </div>
 
-    <a href='https://giarajawali.net/public/galeri'><button class='mt-2 p-3 btn fw-bold'>FOTO LAIN</button></a>
+    <a href='/galeri'><button class='mt-2 p-3 btn fw-bold'>FOTO LAIN</button></a>
 
 </div>
